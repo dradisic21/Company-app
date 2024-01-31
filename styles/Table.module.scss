@@ -1,6 +1,5 @@
 @import "Colors.module.scss";
 
-
 .table_container {
   width: 100%;
   max-width: 1400px;
@@ -34,9 +33,9 @@
         padding: 20px;
 
         &:first-child {
-            flex: 0.3;  
-            max-width: 100px;  
-          }
+          flex: 0.3;
+          max-width: 100px;
+        }
       }
     }
 
@@ -58,28 +57,27 @@
         flex: 1;
         margin-top: 20px;
         border-radius: 10px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        background-color: white;
+        background-color: rgb(226, 226, 226);
         text-align: center;
         position: relative;
       }
 
-    
       td {
         flex: 1;
         max-width: 400px;
         padding: 20px;
 
         &:first-child {
-            flex: 0.3;  
-            max-width: 100px;  
-          }
+          flex: 0.3;
+          max-width: 100px;
+        }
       }
 
       .action_icon {
         display: flex;
-        flex-direction: column;
-        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
         cursor: pointer;
       }
     }

@@ -17,3 +17,20 @@
     }
 
 }
+
+.edit_button{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: $loginButton;
+    color: white;
+    box-shadow: $boxShadowLoginButton;
+    -moz-box-shadow: $moz-boxShadowLoginButton;
+    -webkit-box-shadow: $webkit-boxShadowLoginButton;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hoverButton;
+    }
+}

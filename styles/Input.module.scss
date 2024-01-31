@@ -1,0 +1,17 @@
+@import "Colors.module.scss";
+
+.login-input{
+    width: 250px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: $placeholder;
+    }
+}

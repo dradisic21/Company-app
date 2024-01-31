@@ -1,0 +1,12 @@
+@import "Colors.module.scss";
+
+.login-container {
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: $appBackground;
+}

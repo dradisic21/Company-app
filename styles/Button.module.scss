@@ -1,0 +1,19 @@
+@import "Colors.module.scss";
+
+.login-button{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: $loginButton;
+    color: white;
+    box-shadow: $boxShadowLoginButton;
+    -moz-box-shadow: $moz-boxShadowLoginButton;
+    -webkit-box-shadow: $webkit-boxShadowLoginButton;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hoverButton;
+    }
+
+}

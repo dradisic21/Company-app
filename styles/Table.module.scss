@@ -1,0 +1,87 @@
+@import "Colors.module.scss";
+
+
+.table_container {
+  width: 100%;
+  max-width: 1400px;
+  text-align: center;
+  margin: 0 auto;
+
+  table {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .table_header {
+      overflow: hidden;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+      tr {
+        display: flex;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex: 1;
+        background-color: $tableHeaderBackground;
+        color: $whiteColor;
+      }
+
+      th {
+        flex: 1;
+        max-width: 400px;
+        padding: 20px;
+
+        &:first-child {
+            flex: 0.3;  
+            max-width: 100px;  
+          }
+      }
+    }
+
+    .employee_row {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+
+      tr {
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex: 1;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        text-align: center;
+        position: relative;
+      }
+
+    
+      td {
+        flex: 1;
+        max-width: 400px;
+        padding: 20px;
+
+        &:first-child {
+            flex: 0.3;  
+            max-width: 100px;  
+          }
+      }
+
+      .action_icon {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

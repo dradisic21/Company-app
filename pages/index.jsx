@@ -6,6 +6,7 @@ import inputStyles from "../styles/Input.module.scss";
 import buttonStyle from "../styles/Button.module.scss";
 
 export default function Home() {
+  const [isLoggedIn, setIsLoggedIn] = useState(localStorage)
   const [dataResponse, setdataResponse] = useState([]);
   const [globalError, setGlobalError] = useState(null);
   const [editingEmployee, setEditingEmployee] = useState(null);
@@ -116,15 +117,26 @@ export default function Home() {
   const handleAcceptChanges = async (employeeNo) => {
     try {
       await handleUpdate(employeeNo, editedData, true);
-      setForceRefresh(true); // Postavi `forceRefresh` kako bi se ponovno pokrenuo `useEffect`
+      setForceRefresh(true);
     } catch (error) {
       setGlobalError(`Error accepting changes: ${error.message}`);
     }
   };
 
+  if(!isLoggedIn){
+    return(
+      <LoginPage />
+    )
+  }
 
   return (
     <div className={styles.table_container}>
+      <div>
+        <h1>MY COMPANY</h1>
+      </div>
+      <div>
+        <button className={buttonStyle.add_button}>Add employee</button>
+      </div>
       <table>
         <thead className={styles.table_header}>
           <tr>

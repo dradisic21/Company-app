@@ -14,9 +14,3 @@ export default async function handler(req, res) {
     // res.status(500).json({ error: error.message });
   }
 }
-//if needed
-// export const config = {
-//   api: {
-//     externalResolver: true,
-//   },
-// };

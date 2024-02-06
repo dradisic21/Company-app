@@ -1,6 +1,6 @@
 @import "Colors.module.scss";
 
-.login-form {
+.login_form {
   width: 100%;
   max-width: 1000px;
   height: 600px;
@@ -15,7 +15,7 @@
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
 
-  .image-container {
+  .image_container {
     width: 100%;
     max-width: 580px;
     display: flex;
@@ -32,7 +32,7 @@
       border-radius: 30px ;
     }
   }
-  .form-container {
+  .form_container {
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -41,17 +41,17 @@
     align-items: center;
     margin: 0 auto;
 
-    .title-container{
+    .title_container{
         text-align: center;
         color: $textColor1;
     }
-    .username-input,
-    .password-input {
+    .username_input,
+    .password_input {
       width: 100%;
       padding: 10px 0;
     }
 
-    .button-container {
+    .button_container {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -59,7 +59,7 @@
       padding-top: 50px;
     }
 
-    .or-line {
+    .or_line {
         text-align: center;
         position: relative;
         border-bottom: 1px solid $borderLine;
@@ -71,14 +71,14 @@
         justify-content: center;
       }
       
-      .or-text {
+      .or_text {
         font-size: 10px;
         padding: 0 10px;
         position: absolute;
         background-color: $loginBackground;
       }
 
-      .facebook-login{
+      .facebook_login{
         padding-top: 30px;
 
         .fa-facebook {

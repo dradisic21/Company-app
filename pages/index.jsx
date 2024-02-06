@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { Login } from "../pages/components/Login"
 import styles from "../styles/Table.module.scss";
 import inputStyles from "../styles/Input.module.scss";
 import buttonStyle from "../styles/Button.module.scss";
 
 export default function Home() {
-  const [isLoggedIn, setIsLoggedIn] = useState(localStorage)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [dataResponse, setdataResponse] = useState([]);
   const [globalError, setGlobalError] = useState(null);
   const [editingEmployee, setEditingEmployee] = useState(null);
@@ -123,9 +124,14 @@ export default function Home() {
     }
   };
 
+  useEffect(() => {
+    const storedLoggedIn = localStorage.getItem("isLoggedIn");
+    setIsLoggedIn(storedLoggedIn === "true");
+  }, []);
+
   if(!isLoggedIn){
     return(
-      <LoginPage />
+      <Login/>
     )
   }
 
